@@ -33,13 +33,30 @@
       </div>
       <div id="storage">
         <h1>You’ve used <span>815 GB</span> of your storage</h1>
-        <div id="slider"></div>
-        <div id="relativa">
-          <h2>185</h2>
+        <div
+          id="progress-bar"
+          onmousedown="startDragging(event)"
+          onmouseup="stopDragging(event)"
+          onmousemove="dragging(event)"
+        >
+          <div id="progress">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+            >
+              <circle cx="5" cy="5" r="5" fill="white" />
+            </svg>
+          </div>
+        </div>
+        <div class="box sb4">
+          <h2 id="progress-value">185</h2>
           <span> GB LEFT</span>
         </div>
-        <!-- 0 GB 1000 GB -->
       </div>
+      <script src="index.js"></script>
     </main>
 
     <div class="attribution">
