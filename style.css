@@ -19,6 +19,7 @@ body {
   color: white;
   background: #0c122c;
   background-image: url(components/images/bg-desktop.png);
+  background-size: 2000px 480px;
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -42,7 +43,6 @@ main {
   flex-shrink: 0;
   border-radius: 10px 100px 10px 10px;
   background: #1e2d69;
-  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.25);
 }
 
 #icons {
@@ -60,6 +60,11 @@ main {
   width: 48px;
   height: 48px;
   background-color: #0c122c;
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 #storage {
@@ -80,11 +85,9 @@ main {
 
 h1 {
   color: #dbd9ff;
-  font-family: "Raleway", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  font-family: "Raleway", sans-serif;
 }
 
 span {
@@ -96,23 +99,39 @@ span {
   line-height: normal;
 }
 
-#slider {
+#progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   width: 459px;
   height: 20px;
-  border-radius: 10px;
-  opacity: 0.4979306161403656;
+  flex-shrink: 0;
+  /* border-radius: 10px; */
+  /* opacity: 0.4979; */
   background: #0c122c;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-#slider::-ms-fill {
-  width: 339px;
+#progress {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 3px;
+  margin-right: 3px;
   height: 14px;
   flex-shrink: 0;
   border-radius: 8px;
   background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+  transition: width 0.3s ease;
 }
 
-#relativa {
+svg {
+  margin-right: 3px;
+}
+
+.box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,6 +147,19 @@ span {
   left: -192px;
 }
 
+.sb4:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #ffffff;
+  border-top: 10px solid #ffffff;
+  border-bottom: 10px solid transparent;
+  right: 0px;
+  bottom: -19px;
+}
+
 h2 {
   color: #0c122c;
   text-align: right;
@@ -138,7 +170,7 @@ h2 {
   line-height: 40px; /* 100% */
 }
 
-#relativa span {
+.box span {
   color: #0c122c;
   text-align: right;
   font-family: Raleway;
@@ -150,26 +182,26 @@ h2 {
   opacity: 0.5;
 }
 
-.attribution {
-  font-size: 12px;
-  text-align: center;
+.attribution,
+.attribution span {
+  font-size: 11px;
+  font-weight: 400;
+  color: #dbd9ff;
   font-family: "Raleway", sans-serif;
-  color: hsl(0, 0%, 0%);
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .attribution a {
-  color: hsl(0, 0%, 0%);
+  color: #dbd9ff;
   text-decoration: none;
 }
 
 a:visited {
-  color: hsl(0, 0%, 0%);
-
+  color: #dbd9ff;
   text-decoration: none;
 }
 
 a:hover {
-  color: hsl(15, 100%, 70%);
+  color: #ff4a95;
   text-decoration: underline;
 }
