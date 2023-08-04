@@ -298,6 +298,7 @@ a:hover {
     position: relative;
     top: 91px;
     left: -521px;
+    border-radius: 10px;
   }
 
   .sb4:before {
