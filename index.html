@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -31,8 +30,10 @@
           </div>
         </div>
       </div>
+
       <div id="storage">
         <h1>You’ve used <span>0 GB</span> of your storage</h1>
+
         <div
           id="progress-bar"
           onmousedown="startDragging(event)"
@@ -51,11 +52,18 @@
             </svg>
           </div>
         </div>
+
+        <div id="storageSpace">
+          <div>0 GB</div>
+          <div>1000 GB</div>
+        </div>
+
         <div class="box sb4">
           <h2 id="progress-value">1000</h2>
           <span> GB LEFT</span>
         </div>
       </div>
+
       <script src="index.js"></script>
     </main>
 
