@@ -11,6 +11,10 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 # Result
 
+![image](https://github.com/victoriamnx/Fylo-Data-Storage/assets/96449803/ae3ce571-4a8d-4aa5-b7c9-10e2ebc8e485)
+![image](https://github.com/victoriamnx/Fylo-Data-Storage/assets/96449803/83a7070c-af57-4def-b6bd-3c921a1c6e5f)
+
+
 # Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/fylo-data-storage-9KZB8A2RqI)
